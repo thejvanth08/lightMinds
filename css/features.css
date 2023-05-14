@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a.logo {
+    color: beige;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0.8rem 2rem;
+}
+
+a.logo:hover {
+    text-shadow: 2px 2px 7px aqua, -2px -2px 7px aqua;
+}
+
+.hero-img { 
+    background-image: url(../images/features/hero-features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+header {
+    /* background-color: rgba(128, 128, 128, 0.595); */
+    padding: 0.5rem;
+}
+
+header h1 {
+    line-height: 1.5;
+}
+
+nav {
+    float: right;
+    margin-right: 4rem;
+    /* background-color: black; */
+}
+
+nav li {
+    float: left;
+    /* clear: left; */
+    list-style-type: none;
+}
+
+nav li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 23px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav li > a:hover {
+    text-decoration: underline;
+    color: aqua;
+    /* background-color: rgb(126, 189, 238); */
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Bruno Ace SC", cursive;;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    text-align: center;
+    margin: 30vh auto;
+}
+
+section.features {
+    height: 135vh;
+    width: 100%;
+}
+
+.features h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.features-container {
+    display: grid;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+/* this is like card */
+.features-container > div {
+    border: 3px solid gray;
+    border-radius: 1rem;
+    /* to hide the overflowing card description (moved using relative position) */
+    overflow: hidden;
+    /* making the about relative to current position, so we can move it w.r.t it's original place */
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+/* card body */
+.features-container .about {
+    /* display: none; */
+    background-color: rgba(128, 0, 128, 0.671);
+    text-align: center;
+    padding-top: 5rem;
+    /* color: white; */
+    width: 100%;
+    height: 100%;
+}
+
+.features-container h4 {
+    font-size: 2rem;
+    color: aqua;
+}
+
+.about {
+    /* moving the about or description towards right of the card
+       right: -100% = left: 100% */
+    top: 0;
+    /* not hiding completely */
+    right: -105%;
+    position: absolute;
+    transition: 1s;
+}
+
+.features-container img {
+    background-size: cover;
+    /* background-position: center; not working as intented */
+    background-repeat: no-repeat;
+}
+
+.feature {
+    display: flex;
+    /* to have enough space */
+    padding: 1.3rem; 
+    /* to center img */
+    justify-content: center;
+    align-content: center;
+}
+
+.features-container > div:hover .about{
+    right: 0;
+}
+
+.features-container > div:hover {
+    box-shadow: 3px 3px 4px grey, -3px -3px 4px grey;
+}
+
+/* footer styles */
+
+footer {
+    height: 35vh;
+    width: 100%;
+    background-color: darkmagenta;
+    color: white;
+}
+
+footer > div {
+    padding-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container ul{
+    list-style-type: none;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container a:hover {
+    color: aquamarine;
+}
+
+.header {
+    color: bisque;
+}

@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a.logo {
+    color: beige;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0.8rem 2rem;
+}
+
+a.logo:hover {
+    text-shadow: 2px 2px 7px aqua, -2px -2px 7px aqua;
+}
+
+.hero-img { 
+    background-image: url(../images/feeds/feeds-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+header {
+    /* background-color: rgba(128, 128, 128, 0.595); */
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    line-height: 1.5;
+}
+
+nav {
+    float: right;
+    margin-right: 4rem;
+    /* background-color: black; */
+}
+
+nav li {
+    float: left;
+    /* clear: left; */
+    list-style-type: none;
+}
+
+nav li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 23px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav li > a:hover {
+    text-decoration: underline;
+    color: aqua;
+    /* background-color: rgb(126, 189, 238); */
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Bruno Ace SC", cursive;;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    text-align: center;
+    margin: 30vh auto;
+}
+
+section.feeds {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(244, 232, 217);
+}
+
+.feeds-outer-container {
+    width: 100%;
+    height: 50%;
+}
+
+.feeds-outer-container h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+}
+
+
+.feeds-inner-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.feed {
+    width: 200px;
+    height: 200px;
+    border: 4px solid grey;
+    border-radius: 2rem;
+    background-color: lightgray;
+}
+
+.feed:hover {
+    background-color: grey;
+    /* border: solid white; */
+    box-shadow: 2px 2px 5px aquamarine, -2px -2px 5px aquamarine;
+
+}
+
+
+/* footer styles */
+
+footer {
+    height: 35vh;
+    width: 100%;
+    background-color: darkmagenta;
+    color: white;
+}
+
+footer > div {
+    padding-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container ul{
+    list-style-type: none;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container a:hover {
+    color: aquamarine;
+}
+
+.header {
+    color: bisque;
+}

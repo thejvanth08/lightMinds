@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a.logo {
+    color: beige;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0.8rem 2rem;
+}
+
+a.logo:hover {
+    text-shadow: 2px 2px 7px aqua, -2px -2px 7px aqua;
+}
+
+.hero-img { 
+    background-image: url(../images/features/hero-features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+header {
+    /* background-color: rgba(128, 128, 128, 0.595); */
+    padding: 0.5rem;
+}
+
+header h1 {
+    line-height: 1.5;
+}
+
+nav {
+    float: right;
+    margin-right: 4rem;
+    /* background-color: black; */
+}
+
+nav li {
+    float: left;
+    /* clear: left; */
+    list-style-type: none;
+}
+
+nav li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 23px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav li > a:hover {
+    text-decoration: underline;
+    color: aqua;
+    /* background-color: rgb(126, 189, 238); */
+}
